@@ -15,30 +15,31 @@ Production-ready machine learning system for predicting borrower default risk.
 - CI/CD
 
 ## Architecture
-
-                Streamlit
-                     │
-                     ▼
-              preprocessing.py
-                     │
-                     ▼
-               predictor.py
-                     │
-                     ▼
-             model_loader.py
-                     │
-                     ▼
-       Gradient Boosting Model
-                     │
-                     ▼
-                 SHAP Engine
-                     │
-                     ▼
-             Business Rules
-                     │
-                     ▼
-             Final Decision
-
+                User
+                  │
+                  ▼
+        Streamlit / FastAPI
+                  │
+                  ▼
+        preprocessing.py
+                  │
+                  ▼
+          predictor.py
+                  │
+          ┌───────┴────────┐
+          ▼                ▼
+ model_loader.py      explainer.py
+          │                │
+          ▼                ▼
+ Gradient Boosting      SHAP
+          │                │
+          └───────┬────────┘
+                  ▼
+        business_rules.py
+                  │
+                  ▼
+          Final Decision
+             
 ## Project Structure
 
 src/
