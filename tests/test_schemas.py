@@ -1,6 +1,4 @@
 from src.schemas import Borrower
-from src.preprocessing import prepare_input
-from src.predictor import predict
 
 borrower = Borrower(
     revolving_utilization=0.5,
@@ -15,9 +13,12 @@ borrower = Borrower(
     dependents=2,
 )
 
-input_df = prepare_input(borrower)
+print(borrower)
 
-prediction, probability = predict(input_df)
+print()
 
-print("Prediction:", prediction)
-print("Probability:", probability)
+print("Monthly Income:", borrower.monthly_income)
+
+print("Age:", borrower.age)
+
+print("Debt Ratio:", borrower.debt_ratio)
