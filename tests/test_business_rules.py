@@ -21,7 +21,9 @@ print(f"Total Alerts: {len(alerts)}\n")
 
 for i, alert in enumerate(alerts, start=1):
     print(f"Alert {i}")
-    print(f"Severity : {alert['severity']}")
-    print(f"Title    : {alert['title']}")
-    print(f"Reason   : {alert['reason']}")
-    print("-" * 50)
+    print(f"Rule ID  : {alert.rule_id}")
+    print(f"Category : {alert.category}")
+    print(f"Severity : {alert.severity}")
+    print(f"Title    : {alert.title}")
+    print(f"Reason   : {alert.reason}")
+    print("-" * 60)

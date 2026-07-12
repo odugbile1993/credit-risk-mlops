@@ -16,23 +16,14 @@ class Borrower:
     """
 
     revolving_utilization: float
-
     age: int
-
     past_due_30_59: int
-
     debt_ratio: float
-
     monthly_income: float
-
     open_credit_lines: int
-
     times_90_days_late: int
-
     real_estate_loans: int
-
     past_due_60_89: int
-
     dependents: int
 
 
@@ -43,9 +34,7 @@ class PredictionResult:
     """
 
     prediction: int
-
     probability: float
-
     risk_band: str
 
 
@@ -56,13 +45,20 @@ class Alert:
     """
 
     rule_id: str
-
     category: str
-
     severity: str
-
     title: str
-
     reason: str
-
     icon: str
+
+
+@dataclass
+class DecisionReport:
+    """
+    Final credit decision report.
+    """
+
+    prediction: PredictionResult
+    alerts: list[Alert]
+    recommendation: str
+    approved: bool

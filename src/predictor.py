@@ -1,32 +1,38 @@
 """
 Prediction service.
 
-This module is responsible for making predictions
+This module performs credit risk prediction
 using the trained machine learning model.
 """
 
 from src.model_loader import load_model
+from src.risk import classify_risk
+from src.schemas import PredictionResult
 
 
-def predict(input_df):
+def predict(input_df) -> PredictionResult:
     """
-    Predict credit risk.
+    Predict borrower default risk.
 
     Parameters
     ----------
     input_df : pandas.DataFrame
-        Borrower features.
 
     Returns
     -------
-    tuple
-        prediction, probability
+    PredictionResult
     """
 
     model = load_model()
 
-    prediction = model.predict(input_df)[0]
+    prediction = int(model.predict(input_df)[0])
 
-    probability = model.predict_proba(input_df)[0][1]
+    probability = float(model.predict_proba(input_df)[0][1])
 
-    return prediction, probability
+    risk_band = classify_risk(probability)
+
+    return PredictionResult(
+        prediction=prediction,
+        probability=probability,
+        risk_band=risk_band,
+    )

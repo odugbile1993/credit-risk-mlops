@@ -2,6 +2,7 @@ from src.schemas import Borrower
 from src.preprocessing import prepare_input
 from src.predictor import predict
 
+
 borrower = Borrower(
     revolving_utilization=0.5,
     age=35,
@@ -17,7 +18,8 @@ borrower = Borrower(
 
 input_df = prepare_input(borrower)
 
-prediction, probability = predict(input_df)
+result = predict(input_df)
 
-print("Prediction:", prediction)
-print("Probability:", probability)
+print("Prediction :", result.prediction)
+print("Probability:", result.probability)
+print("Risk Band  :", result.risk_band)
