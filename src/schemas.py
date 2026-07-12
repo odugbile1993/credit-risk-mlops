@@ -51,7 +51,16 @@ class Alert:
     reason: str
     icon: str
 
+@dataclass
+class Explanation:
+    """
+    Represents a single feature explanation.
+    """
 
+    feature: str
+    contribution: float
+    direction: str
+    description: str
 @dataclass
 class DecisionReport:
     """
@@ -60,5 +69,6 @@ class DecisionReport:
 
     prediction: PredictionResult
     alerts: list[Alert]
+    explanations: list[Explanation]
     recommendation: str
     approved: bool
