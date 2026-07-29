@@ -1,14 +1,42 @@
+<div align="center">
+
 # 🚀 OpenFraudLabs Credit Decision Intelligence Platform
 
 > **An Explainable AI-powered Credit Risk Decision Engine built with Machine Learning, MLOps, and Business Decision Intelligence.**
 
-![Python](https://img.shields.io/badge/Python-3.12-blue)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-ML-orange)
-![CatBoost](https://img.shields.io/badge/CatBoost-Supported-green)
-![Gradient%20Boosting](https://img.shields.io/badge/GradientBoosting-Champion-success)
-![SHAP](https://img.shields.io/badge/Explainability-SHAP-red)
-![MLOps](https://img.shields.io/badge/MLOps-Production-black)
-![Status](https://img.shields.io/badge/Status-Beta-yellow)
+<!-- Social Links -->
+
+<p>
+  <a href="https://www.openfraudlabs.com">
+    <img src="https://img.shields.io/badge/Website-OpenFraudLabs-blue?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Website"/>
+  </a>
+
+  <a href="https://github.com/odugbile1993">
+    <img src="https://img.shields.io/badge/GitHub-Ayodele Odugbile-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
+  </a>
+
+  <a href="https://www.linkedin.com/in/ayodele-odugbile-939b97185/">
+    <img src="https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
+  </a>
+
+  <a href="https://scholar.google.com/citations?user=xQu8Qf0AAAAJ&hl=en&authuser=1">
+    <img src="https://img.shields.io/badge/Google-Scholar-4285F4?style=for-the-badge&logo=googlescholar&logoColor=white" alt="Google Scholar"/>
+  </a>
+</p>
+
+<!-- Technology Badges -->
+
+<p>
+  <img src="https://img.shields.io/badge/Python-3.12-blue" />
+  <img src="https://img.shields.io/badge/scikit--learn-ML-orange" />
+  <img src="https://img.shields.io/badge/CatBoost-Supported-green" />
+  <img src="https://img.shields.io/badge/Gradient%20Boosting-Champion-success" />
+  <img src="https://img.shields.io/badge/Explainability-SHAP-red" />
+  <img src="https://img.shields.io/badge/MLOps-Production-black" />
+  <img src="https://img.shields.io/badge/Status-Beta-yellow" />
+</p>
+
+</div>
 
 ---
 
