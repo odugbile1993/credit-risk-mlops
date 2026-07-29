@@ -1,9 +1,8 @@
 <div align="center">
 
-# 🚀 OpenFraudLabs Credit Decision Intelligence Platform
+# 🚀 OpenFraudLabs Explainable Credit Decision Intelligence Platform
 
-> **An Explainable AI-powered Credit Risk Decision Engine built with Machine Learning, MLOps, and Business Decision Intelligence.**
-
+> **End-to-end Explainable AI platform for Credit Risk Decision Intelligence powered by Machine Learning, SHAP, and MLOps.**
 <!-- Social Links -->
 
 <p>
